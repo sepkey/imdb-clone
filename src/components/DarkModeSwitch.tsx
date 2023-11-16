@@ -6,9 +6,10 @@ import { useTheme } from 'next-themes';
 
 export default function DarkModeSwitch() {
   const { setTheme, systemTheme, theme } = useTheme();
-  const [mounted, setMounted] = useState<boolean>(false);
+  const [mounted, setMounted] = useState(false);
 
   useEffect(() => setMounted(true), []);
+
   const currentTheme = theme === 'system' ? systemTheme : theme;
   return (
     <>
