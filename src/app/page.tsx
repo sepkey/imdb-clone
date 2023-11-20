@@ -1,6 +1,5 @@
 import Results from '@/components/Results';
 import { IData } from '@/types/types';
-import { ReadonlyURLSearchParams } from 'next/navigation';
 
 const API_KEY = process.env.API_KEY;
 
